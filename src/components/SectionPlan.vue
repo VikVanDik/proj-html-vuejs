@@ -12,14 +12,14 @@ name : 'SectionPlan',
       <div class="mini-title">The Ultimate Competitive Gaming Platform</div>
       <h1>Make Your Mark On The Battle Field</h1>
       <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at. Sit, illo perspiciatis. Labore aspernatur adipisci et doloremque a modi.</div>
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-center pt-3">
         <img src="/img/icon/features-icon-1.png" alt="Live" class="icon">
         <div>
           <h4>Live Streaming</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione exercitationem consequuntur magnam eligendi doloribus ipsam</p>
         </div>
       </div>
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-center ">
         <img src="/img/icon/features-icon-2.png" alt="Cup" class="icon">
         <div>
           <h4>Great Tournaments</h4>
@@ -57,14 +57,16 @@ position: relative;
 }
 
 .plan {
-  margin-left: 1000px;
+  margin-left: 950px;
   padding-top: 150px;
   width: 600px;
+  font-weight: 600;
+  font-family: $PrimaryFont;
 }
 
 .mini-title{
   color: $TextGreen;
-  font-size: 26px;
+  font-size: 23px;
   padding-bottom: 10px;
 }
 
@@ -76,11 +78,13 @@ h4 {
 
 h1{
   color: $White;
-  font-size: 60px;
+  font-size: 55px;
 }
 
 .info {
   color: $White;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 p {
@@ -99,11 +103,11 @@ p {
   border-radius: 40px;
   padding: 18px 10px;
   border: 1px solid $ButtonsGreen;
-  width: 150px;
+  width: 155px;
   position: relative;
   margin-top: 50px;
   .button {
-    width: 135px;
+    width: 145px;
     padding: 15px;
     background-color: $ButtonsGreen;
     border-radius: 30px;
@@ -113,6 +117,7 @@ p {
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
+    font-family:Arial, Helvetica, sans-serif;
   }
 }
 

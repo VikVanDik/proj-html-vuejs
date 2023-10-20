@@ -58,17 +58,20 @@ components : {
   color: $White;
   margin-left: 150px;
   min-width: 420px;
+  font-family: $PrimaryFont;
 }
 
 .link {
   color: $Grey;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .cart {
   color: $White;
   position: relative;
+  font-size: 19px;
 }
 
 .cart-num {
@@ -90,9 +93,10 @@ components : {
   .button {
     padding: 15px;
     background-color: $ButtonsGreen;
-   border-radius: 30px;
-   color: $Black;
-   text-decoration: none;
+    border-radius: 30px;
+    color: $Black;
+    text-decoration: none;
+    font-weight: 600;
   }
 }
 </style>

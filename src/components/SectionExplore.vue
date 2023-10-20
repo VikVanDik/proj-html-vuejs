@@ -26,8 +26,8 @@ export default {
     <div class="container-custom d-flex">
       <div class="games">
         <h3>Game With Live Streaming</h3>
-        <h1>Future of Esports</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam consequatur omnis eos atque asperiores accusantium?</p>
+        <h1>Future Of Esports</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam consequatur omnis eos atque asperiores</p>
         <div class="buttons d-flex align-items-center">
           <div class="border-button">
           <a href="#" class="button">EXPLORE GAMES  <i class="fa-solid fa-angles-right"></i></a>
@@ -70,14 +70,18 @@ export default {
   z-index: 15;
   p {
     color: $White;
+    font-size: 20px;
   }
   h1 {
   font-size: 80px;
   color: $White;
-  line-height: 80px;
+  font-family: $PrimaryFont;
+  font-weight: 600;
   }
   h3 {
     color: $TextGreen;
+    font-family: $PrimaryFont;
+    font-weight: 600;
   }
 }
 
@@ -98,6 +102,7 @@ export default {
     background-color: $ButtonsGreen;
     border-radius: 30px;
     color: $Black;
+    font-weight: 600;
     text-decoration: none;
     position: absolute;
     top: 50%;
