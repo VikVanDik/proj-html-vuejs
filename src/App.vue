@@ -1,11 +1,13 @@
 <script>
 import SectionExplore from './components/SectionExplore.vue';
+import SectionPlan from './components/SectionPlan.vue';
 
 export default {
   name : 'App',
 
   components : {
-    SectionExplore
+    SectionExplore,
+    SectionPlan
   }
 }
 </script>
@@ -14,6 +16,7 @@ export default {
 
   <div>
     <SectionExplore />
+    <SectionPlan />
   </div>
   
 </template>

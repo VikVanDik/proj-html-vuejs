@@ -46,7 +46,7 @@ components : {
 }
 
 .logo {
-  width: 100px;
+  width: 130px;
 }
 .head {
   align-items: center;
@@ -63,7 +63,7 @@ components : {
 .link {
   color: $Grey;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .cart {
@@ -82,19 +82,17 @@ components : {
   padding: 3px;
 }
 
-.button {
-  padding: 15px;
-  background-color: $ButtonsGreen;
-  border-radius: 30px;
-  color: $Black;
-  text-decoration: none;
-
-}
-
 .border-button {
   border-radius: 40px;
   padding: 18px 6px;
   border: 1px solid $ButtonsGreen;
   min-width: 165px;
+  .button {
+    padding: 15px;
+    background-color: $ButtonsGreen;
+   border-radius: 30px;
+   color: $Black;
+   text-decoration: none;
+  }
 }
 </style>

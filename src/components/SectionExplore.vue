@@ -48,7 +48,7 @@ export default {
 @use '../scss/partials/variables' as *;
 
 .explore {
-  height: 700px;
+  height: 900px;
   background-image: url('/img/index-banner-bg.png');
   background-size: cover;
   z-index: 0;
@@ -59,18 +59,18 @@ export default {
   position: absolute;
   z-index: 10;
   left: 20px;
-  bottom: 70px;
-  width: 400px;
+  bottom: 100px;
+  width: 450px;
 }
 
 .games {
-  padding-top: 100px;
+  padding-top: 200px;
   max-width: 500px;
   position: relative;
   z-index: 15;
   p {
     color: $White;
-  } 
+  }
   h1 {
   font-size: 80px;
   color: $White;
@@ -132,9 +132,9 @@ export default {
 }
 
 .soldier {
-  width: 800px;
+  width: 1000px;
   position: absolute;
-  right: 200px;
+  right: 100px;
   top: 0;
 }
 
