@@ -4,6 +4,7 @@ import SectionPlan from './components/SectionPlan.vue';
 import SectionMatches from './components/SectionMatches.vue';
 import Slider from './components/partials/Slider.vue'
 import Facts from './components/Facts.vue';
+import Footer from './components/Footer.vue'
 
 export default {
   name : 'App',
@@ -13,6 +14,7 @@ export default {
     SectionPlan,
     SectionMatches,
     Slider,
+    Footer,
     Facts
   }
 }
@@ -25,6 +27,7 @@ export default {
     <SectionPlan />
     <SectionMatches />
     <Facts />
+    <Footer />
   </div>
   
 </template>

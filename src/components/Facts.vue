@@ -47,7 +47,8 @@ export default {
   font-size: 50px;
   font-family: $PrimaryFont;
   font-weight: 600;
-  margin-bottom: 50px
+  margin-bottom: 50px;
+  padding-top: 100px;
 }
 .height {
   height: 400px;
