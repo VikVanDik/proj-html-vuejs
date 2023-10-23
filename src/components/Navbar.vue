@@ -17,7 +17,7 @@ name : 'Navbar',
     <nav>
       <ul class="nav">
         <li><a href="#" class="link mx-2">Home</a></li>
-        <li><a href="#" class="drop-active link mx-2">Games <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li class="drop-active"><a href="#" class="link mx-2">Games <i class="fa-solid fa-chevron-down"></i></a></li>
         <div class="dropdown">
           <ul>
             <li><a href="#" class="drop-item">Games</a></li>
@@ -98,7 +98,7 @@ name : 'Navbar',
   color: $TextGreen;
 }
 
-.drop-active:hover ~ .dropdown {
+.drop-active:hover + .dropdown {
   display: block;
 }
 
@@ -118,7 +118,6 @@ name : 'Navbar',
   color: $Black;
   padding: 3px;
 }
-
 
 .button {
   padding: 15px;

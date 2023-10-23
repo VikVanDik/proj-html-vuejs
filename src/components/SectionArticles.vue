@@ -30,15 +30,15 @@ export default {
       <div class="half-container">
         <div class="card-main-art">
           
-          <img src="/img/blog-item-1.png" alt="Item">
+          <img :src="`/img/${store.articles[0].img}.png`" alt="Item">
           
           <div class="pos-i">
-            <span class="info"><i class="fa-regular fa-clock"></i> {{ store.articles[1].time }} Min</span>
-            <span class="info"><i class="fa-regular fa-eye"></i> {{ store.articles[1].visual }}</span>
-            <span class="info"><i class="fa-regular fa-calendar"></i> {{ store.articles[1].date }}</span>
+            <span class="info"><i class="fa-regular fa-clock"></i> {{ store.articles[0].time }} Min</span>
+            <span class="info"><i class="fa-regular fa-eye"></i> {{ store.articles[0].visual }}</span>
+            <span class="info"><i class="fa-regular fa-calendar"></i> {{ store.articles[0].date }}</span>
           </div>
           <h1 class="pos-t">
-            {{ store.articles[1].text }}
+            {{ store.articles[0].text }}
           </h1>
         </div>
       </div>
@@ -46,13 +46,13 @@ export default {
         <div class="d-flex flex-column">
           <div class="card-side-art d-flex"
           v-for="article in getArray" :key="article.ID">
-            <img src="/img/blog-item-2.png" alt="Item" class="img">
+            <img :src="`/img/${article.img}.png`" alt="Item" class="img">
             <div class="info-side"> 
-            <span class="info"><i class="fa-regular fa-clock"></i> {{ article.time }} Min</span>
-            <span class="info"><i class="fa-regular fa-eye"></i> {{ article.visual }}</span>
-            <span class="info"><i class="fa-regular fa-calendar"></i> {{ article.date }}</span>
+            <span class="info-s"><i class="fa-regular fa-clock"></i> {{ article.time }} Min</span>
+            <span class="info-s"><i class="fa-regular fa-eye"></i> {{ article.visual }}</span>
+            <span class="info-s"><i class="fa-regular fa-calendar"></i> {{ article.date }}</span>
             </div>
-            <div class="title">
+            <div class="title-s">
               {{ article.text }}
             </div>
           </div>
@@ -137,10 +137,13 @@ position: relative;
   font-weight: 100;
   margin-right: 30px;
   position: absolute;
-  left: 230px;
+  left: 220px;
   top: 20px;
-  .info {
-    margin-right: 25px;
+  .info-s {
+    color: $TextGreen;
+    font-size: 17px;
+    font-weight: 100;
+    margin-right: 30px;
   }
   }
   .img {
@@ -149,12 +152,12 @@ position: relative;
   left: 0;
   border-radius: 20px;
 }
-.title {
+.title-s {
   color: $White;
   font-family: $PrimaryFont;
   font-size: 25px;
   position: absolute;
-  left: 230px;
+  left: 220px;
   top: 60px;
 }
 }
