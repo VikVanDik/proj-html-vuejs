@@ -1,6 +1,5 @@
 @use './variables' as *;
 
-
 * {
   padding: 0;
   margin: 0;
@@ -9,5 +8,10 @@
 
 .container-custom {
   width: 1300px;
+  margin: 0 auto;
+}
+
+.container-custom-mini {
+  width: 700px;
   margin: 0 auto;
 }

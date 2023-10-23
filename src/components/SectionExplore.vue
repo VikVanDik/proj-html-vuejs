@@ -28,13 +28,9 @@ export default {
         <h3>Game With Live Streaming</h3>
         <h1>Future Of Esports</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam consequatur omnis eos atque asperiores</p>
-        <div class="buttons d-flex align-items-center">
-          <div class="border-button">
-          <a href="#" class="button">EXPLORE GAMES  <i class="fa-solid fa-angles-right"></i></a>
-          </div>
-          <div class="border-round">
-            <a href="#" class="round d-flex"><i class="fa-solid fa-play"></i></a>
-          </div>
+        <div class="buttons d-flex align-items-center">          
+          <a href="#" class="button">EXPLORE GAMES  <i class="fa-solid fa-angles-right"></i></a>                
+          <a href="#" class="round d-flex"><i class="fa-solid fa-play"></i></a>         
         </div>
       </div>
       <img src="/img/index-banner-illus.png" alt="Soldier" class="soldier">
@@ -89,13 +85,6 @@ export default {
   height: 100px;
 }
 
-.border-button {
-  height: 65px;
-  border-radius: 40px;
-  padding: 18px 10px;
-  border: 1px solid $ButtonsGreen;
-  width: 190px;
-  position: relative;
   .button {
     width: 180px;
     padding: 15px;
@@ -104,21 +93,18 @@ export default {
     color: $Black;
     font-weight: 600;
     text-decoration: none;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+    outline: 1px solid $ButtonsGreen;
+    outline-offset: 5px;
   }
+
+
+.button:hover {
+  background-color: $HoverGreen;
+  outline: 1px solid $HoverGreen;
 }
 
-.border-round {
-  margin-left: 20px;
-  height: 80px;
-  width: 80px;
-  border: 1px solid $ButtonsGreen;
-  border-radius: 50%;
-  position: relative;
   .round {
+    margin-left: 20px;
     text-decoration: none;
     color: $ButtonsGreen;
     background-color: $White;
@@ -129,12 +115,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+    outline: 1px solid $ButtonsGreen;
+    outline-offset: 8px;
   }
-}
+
 
 .soldier {
   width: 1000px;

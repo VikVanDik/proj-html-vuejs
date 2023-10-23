@@ -24,9 +24,9 @@ export default {
       <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque</p>
       <div class="row justify-content-center">
         <Card v-for="match in store.matches" :key="match.ID" :matchObj="match"/>
-        <div class="border-button m-5">
+        
           <a href="#" class="button">VIEW ALL MATCHES <i class="fa-solid fa-angles-right"></i></a>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -64,13 +64,7 @@ export default {
   padding: 20px 300px;
 }
 
-.border-button {
-  height: 65px;
-  border-radius: 40px;
-  padding: 18px 10px;
-  border: 1px solid $ButtonsGreen;
-  width: 215px;
-  position: relative;
+
   .button {
     width: 200px;
     padding: 15px;
@@ -79,11 +73,14 @@ export default {
     color: $Black;
     font-weight: 600;
     text-decoration: none;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+    outline: 1px solid $ButtonsGreen;
+    outline-offset: 5px;
+    margin-top: 50px;
   }
+
+  .button:hover {
+  background-color: $HoverGreen;
+  outline: 1px solid $HoverGreen;
 }
 
 

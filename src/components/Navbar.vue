@@ -3,9 +3,6 @@
 export default {
 name : 'Navbar',
 
-components : {
-}
-
 }
 </script>
 
@@ -20,7 +17,14 @@ components : {
     <nav>
       <ul class="nav">
         <li><a href="#" class="link mx-2">Home</a></li>
-        <li><a href="#" class="link mx-2">Games <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a href="#" class="drop-active link mx-2">Games <i class="fa-solid fa-chevron-down"></i></a></li>
+        <div class="dropdown">
+          <ul>
+            <li><a href="#" class="drop-item">Games</a></li>
+            <li><a href="#" class="drop-item">Games Details</a></li>
+            <li><a href="#" class="drop-item">Match Details</a></li>
+          </ul>
+        </div>
         <li><a href="#" class="link mx-2">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
         <li><a href="#" class="link mx-2">Pages <i class="fa-solid fa-chevron-down"></i></a></li>
         <li><a href="#" class="link mx-2">Blog <i class="fa-solid fa-chevron-down"></i></a></li>
@@ -30,9 +34,7 @@ components : {
 
     <div class="right d-flex align-items-center">
       <i class="fa-solid fa-cart-shopping cart mx-3"><div class="cart-num">03</div></i>
-      <div class="border-button">
         <a href="#" class="button">LIVE STREAMING</a>
-      </div>
     </div>
   </div>
 </template>
@@ -40,6 +42,28 @@ components : {
 
 <style lang="scss" scoped>
 @use '../scss/partials/variables' as *;
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 690px;
+  ul {
+    list-style: none;
+    li{
+      background-color: $Blue;
+      padding: 10px 15px;
+      a{
+        text-decoration: none;
+        color: $White;
+        &:hover {
+          color: $TextGreen;
+        }
+      }
+    }
+  }
+}
+
 
 .right {
   margin-left: 150px;
@@ -51,6 +75,8 @@ components : {
 .head {
   align-items: center;
   height: 100px;
+  position: relative;
+  z-index: 99999;
 }
 
 .nav {
@@ -66,6 +92,14 @@ components : {
   text-decoration: none;
   font-size: 17px;
   font-weight: 600;
+}
+
+.link:hover {
+  color: $TextGreen;
+}
+
+.drop-active:hover ~ .dropdown {
+  display: block;
 }
 
 .cart {
@@ -85,18 +119,21 @@ components : {
   padding: 3px;
 }
 
-.border-button {
-  border-radius: 40px;
-  padding: 18px 6px;
-  border: 1px solid $ButtonsGreen;
-  min-width: 165px;
-  .button {
-    padding: 15px;
-    background-color: $ButtonsGreen;
-    border-radius: 30px;
-    color: $Black;
-    text-decoration: none;
-    font-weight: 600;
+
+.button {
+  padding: 15px;
+  background-color: $ButtonsGreen;
+  border-radius: 30px;
+  color: $Black;
+  text-decoration: none;
+  font-weight: 600;
+  outline: 1px solid $ButtonsGreen;
+  outline-offset: 5px;
+  margin-left: 5px;
+  &:hover {
+    background-color: $HoverGreen;
+    outline: 1px solid $HoverGreen;
   }
 }
+
 </style>

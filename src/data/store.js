@@ -23,6 +23,41 @@ export const store = reactive ({
       data : '40'
     },
   ],
+  articles : [
+    {
+      ID : '1',
+      text : 'Secrets To An Amazing Role Playing Game',
+      date : 'Apr 11, 2022',
+      visual : '240',
+      img : 'blog-item-1',
+      time : '10'
+    },
+    {
+      ID : '2',
+      text : 'Top 5 Most Important Aspects Of Your Game',
+      date : 'Apr 10, 2022',
+      visual : '452',
+      img : 'blog-item-2',
+      time : '5'
+    },
+    {
+      ID : '3',
+      text : 'The Rise Of Fantasy Sports And Online Games',
+      date : 'Apr 10, 2022',
+      visual : '115',
+      img : 'blog-item-3',
+      time : '15'
+    },
+    {
+      ID : '4',
+      text : 'Benefits Of Gaming - PC And Video Games',
+      date : 'Apr 09, 2022',
+      visual : '325',
+      img : 'blog-item-4',
+      time : '8'
+    },
+    
+  ],
   matches : [
     {
       ID : '1',
@@ -83,6 +118,53 @@ export const store = reactive ({
         img : 'twitch-icon.png',
         text : 'Twitch'
       }
+    },
+  ],
+  feedbacks : [
+    {
+      ID : '1',
+      text : 'Error maiores dolor sapiente suscipit non debitis animi, corrupti perferendis quidem facere in nulla voluptas cum',
+      vote : '4',
+      name : 'Kim',
+      surname : 'Ramos',
+      country : 'Serbia',
+      pic : 'testimonials-image-3.png'
+    },
+    {
+      ID : '2',
+      text : 'Error maiores dolor sapiente suscipit non debitis animi, corrupti perferendis quidem facere in nulla voluptas cum',
+      vote : '5',
+      name : 'Tom',
+      surname : 'Riddle',
+      country : 'United Kingdom',
+      pic : 'testimonials-image-2.png'
+    },
+    {
+      ID : '3',
+      text : 'Error maiores dolor sapiente suscipit non debitis animi, corrupti perferendis quidem facere in nulla voluptas cum',
+      vote : '4',
+      name : 'Giuseppe',
+      surname : 'Gattuso',
+      country : 'Italy',
+      pic : 'testimonials-image-1.png'
+    },
+    {
+      ID : '4',
+      text : 'Error maiores dolor sapiente suscipit non debitis animi, corrupti perferendis quidem facere in nulla voluptas cum',
+      vote : '3',
+      name : 'Grace',
+      surname : 'Ferbson',
+      country : 'United States',
+      pic : 'testimonials-image-3.png'
+    },
+    {
+      ID : '5',
+      text : 'Error maiores dolor sapiente suscipit non debitis animi, corrupti perferendis quidem facere in nulla voluptas cum',
+      vote : '5',
+      name : 'Garry',
+      surname : 'Francis',
+      country : 'Kiribati',
+      pic : 'testimonials-image-2.png'
     },
   ]
 })

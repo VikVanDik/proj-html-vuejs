@@ -33,8 +33,8 @@ name : 'SectionPlan',
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione exercitationem consequuntur magnam eligendi doloribus ipsam</p>
         </div>
       </div>
-      <div class="border-button">
-          <a href="#" class="button">PLAN NOW  <i class="fa-solid fa-angles-right"></i></a>
+      <div class="margin">
+        <a href="#" class="button">PLAN NOW  <i class="fa-solid fa-angles-right"></i></a>
       </div>
     </div>
   </div>
@@ -98,14 +98,7 @@ p {
   margin-right: 30px;
 }
 
-.border-button {
-  height: 65px;
-  border-radius: 40px;
-  padding: 18px 10px;
-  border: 1px solid $ButtonsGreen;
-  width: 155px;
-  position: relative;
-  margin-top: 50px;
+
   .button {
     width: 145px;
     padding: 15px;
@@ -113,12 +106,19 @@ p {
     border-radius: 30px;
     color: $Black;
     text-decoration: none;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
     font-family:Arial, Helvetica, sans-serif;
+    outline: 1px solid $ButtonsGreen;
+    outline-offset: 5px;
   }
+
+  .margin {
+    margin-top: 50px;
+  }
+
+
+.button:hover {
+  background-color: $HoverGreen;
+  outline: 1px solid $HoverGreen;
 }
 
 </style>

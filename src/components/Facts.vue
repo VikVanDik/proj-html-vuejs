@@ -51,7 +51,7 @@ export default {
   padding-top: 100px;
 }
 .height {
-  height: 400px;
+  height: 500px;
   background-color: $Black;
 }
 
