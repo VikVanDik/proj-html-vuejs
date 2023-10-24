@@ -3,6 +3,12 @@
 export default {
 name : 'Navbar',
 
+data() {
+  return {
+    isActive : false
+  }
+}
+
 }
 </script>
 
@@ -16,10 +22,13 @@ name : 'Navbar',
 
     <nav>
       <ul class="nav">
-        <li><a href="#" class="link mx-2">Home</a></li>
-        <li class="drop-active"><a href="#" class="link mx-2">Games <i class="fa-solid fa-chevron-down"></i></a></li>
-        <div class="dropdown">
-          <ul>
+        <li @mouseenter="this.isActive=false"><a href="#" class="link mx-2">Home</a></li>
+        <li class="drop-active" @mouseenter="this.isActive=true" @mouseleave="this.isActive=false"><a href="#" class="link mx-2">Games <i class="fa-solid fa-chevron-down"></i></a></li>
+        <div
+        class="dropdown" 
+        :class="(isActive === true) ? 'block' : ''"
+        @mouseleave="this.isActive=false">
+          <ul >
             <li><a href="#" class="drop-item">Games</a></li>
             <li><a href="#" class="drop-item">Games Details</a></li>
             <li><a href="#" class="drop-item">Match Details</a></li>
@@ -92,6 +101,10 @@ name : 'Navbar',
   text-decoration: none;
   font-size: 17px;
   font-weight: 600;
+}
+
+.block {
+  display: block;
 }
 
 .link:hover {
